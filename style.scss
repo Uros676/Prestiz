@@ -1,0 +1,258 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display&family=Satisfy&display=swap");
+$secondary-color: #fcda9a;
+$dark-color: #b48c81;
+.primary-font {
+  font-family: "Montserrat", sans-serif !important;
+}
+.secondary-font {
+  font-family: "Satisfy", cursive;
+}
+.display-font {
+  font-family: "Playfair Display", serif;
+}
+.text-second {
+  color: $secondary-color;
+}
+.dark-color {
+  color: $dark-color;
+}
+.title-hr {
+  width: 50%;
+  color: #fcda9a;
+  margin: 0 auto;
+  //   border: 1px solid $secondary-color;
+  opacity: 1 !important;
+}
+.mb--1 {
+  margin-bottom: -0px;
+}
+.mb-m2 {
+  margin-bottom: -0.5rem;
+}
+nav {
+  z-index: 4;
+  .container {
+    .navbar-brand {
+      font-size: 30px;
+      color: $secondary-color;
+    }
+    .nav-link {
+      &:hover {
+        small {
+          opacity: 1;
+        }
+      }
+      small {
+        opacity: 0;
+        transition: all 0.3s;
+        color: $secondary-color;
+      }
+    }
+    .active {
+      color: $secondary-color !important;
+      small {
+        opacity: 1;
+      }
+    }
+  }
+}
+#cover {
+  background-image: url("../img/cover-banner.jpg");
+  height: 100vh;
+  background-size: cover;
+  background-position: bottom;
+  background-attachment: fixed;
+  .container {
+    position: relative;
+    z-index: 2;
+  }
+  span {
+    color: #c4c4c4;
+  }
+}
+#banner {
+  background-image: url("../img/banner-2.jpg");
+  background-position: center;
+  background-size: cover;
+  min-height: 350px;
+  .container {
+    position: relative;
+    z-index: 1;
+  }
+}
+.dark-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+#menu,
+.menu-page {
+  .container {
+    width: 75%;
+    .menu-link {
+      &:hover {
+        .menu-img {
+          .dark-overlay {
+            opacity: 1;
+          }
+        }
+      }
+      .menu-img {
+        object-fit: contain;
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 250px;
+        transition: all 0.2s;
+        .dark-overlay {
+          opacity: 0;
+          transition: all 0.2s;
+        }
+        &:hover {
+          transform: scale(1.05);
+        }
+      }
+      .menu-img-1 {
+        background-image: url("../img/menu-1.jpg");
+      }
+      .menu-img-2 {
+        background-image: url("../img/menu-2.jpg");
+      }
+      .menu-img-3 {
+        background-image: url("../img/menu-3.jpg");
+      }
+      .menu-img-4 {
+        background-image: url("../img/menu-4.jpg");
+      }
+    }
+    .menu-dish {
+      .dish-name {
+        font-size: 16px;
+      }
+      .dish-desc {
+        font-size: 14px;
+      }
+    }
+  }
+}
+#testimonials {
+  background-image: url("../img/banner-1.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 300px;
+  .container {
+    position: relative;
+    z-index: 1;
+  }
+}
+
+.cover-secondary {
+  background-size: cover;
+  min-height: 400px;
+  .container {
+    position: relative;
+    z-index: 3;
+  }
+}
+.about-cover {
+  background-image: url("../img/banner-2.jpg");
+}
+.menu-cover {
+  background-image: url("/img/banner-3.jpg");
+}
+.gallery-cover {
+  background-image: url("../img/banner-1.jpg");
+}
+#gallery {
+  img {
+    transition: all 0.2s;
+  }
+  a:hover {
+    img {
+      transform: scale(1.04);
+    }
+  }
+}
+footer {
+  .container {
+    a {
+      transition: all 0.2s;
+    }
+    a:hover {
+      color: #fff !important;
+    }
+  }
+}
+@media screen and (max-width: 1025px) {
+  #about {
+    .container {
+      .about-text {
+        h3 {
+          font-size: 23px;
+        }
+        h2 {
+          font-size: 25px;
+        }
+        p {
+          .text-second {
+            font-size: 20px;
+          }
+          &:nth-of-type(2) {
+            font-size: 14px;
+          }
+          .small {
+            font-size: 12px !important;
+          }
+        }
+      }
+    }
+  }
+  #menu {
+    .container {
+      width: 100%;
+    }
+  }
+}
+@media screen and (max-width: 769px) {
+  nav {
+    background-color: #212529;
+  }
+  #menu {
+    .container {
+      .menu-wrap {
+        flex-direction: column-reverse;
+      }
+    }
+  }
+}
+@media screen and (max-width: 426px) {
+  #about {
+    .container {
+      .about-ingredients {
+        flex-direction: column-reverse;
+      }
+    }
+  }
+  #menu {
+    .menu-dish {
+      img {
+        width: 50% !important;
+        margin-left: 25%;
+      }
+      .dish-name {
+        text-align: center;
+        margin-top: 10px;
+      }
+      .dish-desc {
+        text-align: center;
+      }
+      .dish-price {
+        font-size: 50px;
+        margin-top: 20px;
+      }
+    }
+  }
+}

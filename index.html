@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="mailto:uros.lazic.91.21@ict.edu.rs" />
+    <meta
+      name="keywords"
+      content="Restoran, Prestige, Hrana, Kuvanje, Jelo, Dezerti, Piće"
+    />
+    <meta name="description" content="..." />
+    <meta name="copyright" content="Prestige 2022. All rights reserved." />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.min.css" />
+    <link rel="shortcut icon" href="img/logo.ico" type="image/x-icon" />
+    <title>Prestiž </title>
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+    <nav
+      class="navbar navbar-expand-lg position-fixed w-100 navbar-dark p-lg-4 p-md-3 p-2 primary-font"
+    >
+      <div class="container">
+        <a
+          class="navbar-brand text-second secondary-font text-second"
+          href="index.html"
+          >Prestiž</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNavDropdown"
+        >
+          <ul class="navbar-nav text-uppercase">
+            <li class="nav-item">
+              <a
+                class="nav-link active text-white"
+                aria-current="page"
+                href="index.html"
+              >
+                <small
+                  ><span class="iconify-inline" data-icon="ci:dot-03-m"></span
+                ></small>
+                Početna</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="about.html"
+                ><small
+                  ><span
+                    class="iconify-inline"
+                    data-icon="ci:dot-03-m"
+                  ></span></small
+                >O nama</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="menu.html"
+                ><small
+                  ><span
+                    class="iconify-inline"
+                    data-icon="ci:dot-03-m"
+                  ></span></small
+                >Meni</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="gallery.html"
+                ><small
+                  ><span
+                    class="iconify-inline"
+                    data-icon="ci:dot-03-m"
+                  ></span></small
+                >Galerija</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="https://uros676.github.io"
+                ><small
+                  ><span
+                    class="iconify-inline"
+                    data-icon="ci:dot-03-m"
+                  ></span></small
+                >Autor</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- COVER  -->
+    <div
+      id="cover"
+      class="d-flex position-relative justify-content-center align-items-center"
+    >
+      <div class="dark-overlay"></div>
+      <div class="container">
+        <div class="cover-text text-center">
+          <h2 class="secondary-font text-second h1 mb-m2">Istražite</h2>
+          <h1 class="display-font text-white text-uppercase display-4">
+            Prestiž
+          </h1>
+          <hr class="title-hr my-3" />
+          <h3 class="primary-font text-white h5 mt-3 text-uppercase small">
+            Radno vreme
+          </h3>
+          <p class="text-white font-primary small mb--1">
+            Ponedeljak - Petak: <span> 08:00 h - 00:00 h</span>
+          </p>
+          <p class="text-white font-primary small">
+            Vikendom: <span> 08:00 h - 20:00 h</span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- ABOUT -->
+    <div id="about" class="py-5 bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-sm-12">
+            <img
+              src="img/about-img.jpg"
+              alt="about img"
+              class="img-fluid h-100"
+            />
+          </div>
+          <div
+            class="col-md-6 col-sm-12 text-center about-text d-flex justify-content-center align-items-center"
+          >
+            <div class="mt-sm-0 mt-5">
+              <h3 class="secondary-font text-second dark-color h3 m--2">
+                Naša priča
+              </h3>
+              <h2 class="display-font text-uppercase h2">Sa vama od 2005</h2>
+              <hr class="title-hr w-25 my-3" />
+              <p class="text-second display-font h3 w-75 mx-auto dark-color">
+                "Sve dok vam je u ustima zalogaj hrane,
+                problemi su rešeni-bar za sada".
+              </p>
+              <p class="primary-font fw-light">- Franc Kafka</p>
+              <p class="text-muted primary-font small">
+                Restoran,Prestiž sa svojim prelepim enterijerom i zanimljivom arhitekturom,
+                predstavlja biser gastronomske ponude našeg grada.Restoran je kapaciteta do
+                200 mesta u kome je moguće organizovati sve vrste ličnih i poslovnih proslava,
+              </p>
+              <p class="text-center primary-font">
+                <button
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                  class="text-dark text-decoration-none bg-light border-0"
+                >
+                  Pročitaj više
+                  <span
+                    class="iconify-inline"
+                    data-icon="bi:arrow-right"
+                  ></span>
+                </button>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-5 about-ingredients">
+          <div
+            class="col-md-6 col-sm-12 text-center about-text d-flex justify-content-center align-items-center"
+          >
+            <div class="mt-sm-0 mt-5">
+              <h3 class="secondary-font text-second dark-color h3 m--2">
+                Naša ponuda
+              </h3>
+              <h2 class="display-font text-uppercase h2">
+                UVEK SVEŽA HRANA
+              </h2>
+              <hr class="title-hr w-25 my-3" />
+              <p class="text-muted primary-font small">
+                Pored fantastične dekoracije i atmosfere, naravno je tu je i fantastična kuhinja.
+                Naš meni zasnivaju se na dugogodišnjem iskustvu,medjutim možete i vi sami za sebe
+                prilagoditi meni i odabrati ono što vama odgovara,
+                
+
+              </p>
+              <p class="text-center primary-font">
+                <button
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                  class="text-dark text-decoration-none bg-light border-0"
+                >
+                  Pročitaj više
+                  <span
+                    class="iconify-inline"
+                    data-icon="bi:arrow-right"
+                  ></span>
+                </button>
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <img
+              src="img/about-ingredients.jpg"
+              alt="about img"
+              class="img-fluid h-100"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- BANNER -->
+    <div
+      id="banner"
+      class="d-flex justify-content-center align-items-center position-relative"
+    >
+      <div class="dark-overlay"></div>
+      <div class="container text-center">
+        <h2 class="text-second secondary-font">Izuzetna kuhinja</h2>
+        <h1 class="text-white display-font text-uppercase">
+          HRANA PO VAŠEM UKUSU
+        </h1>
+        <hr class="title-hr" />
+      </div>
+    </div>
+    <!-- MENU -->
+    <div id="menu" class="py-sm-5 pb-0 pt-5 bg-light">
+      <div class="container">
+        <div class="row menu-wrap">
+          <div class="col-lg-6 col-md-12">
+            <div class="row">
+              <div class="col-sm-6 p-0 overflow-hidden">
+                <a href="#" class="menu-link">
+                  <div class="menu-img menu-img-1 position-relative">
+                    <div
+                      class="dark-overlay d-flex justify-content-center align-items-center"
+                    >
+                      <p class="text-white primary-font h3"> sveže</p>
+                    </div>
+                  </div></a
+                >
+              </div>
+              <div class="col-sm-6 p-0 overflow-hidden">
+                <a href="#" class="menu-link">
+                  <div class="menu-img menu-img-2 position-relative">
+                    <div
+                      class="dark-overlay d-flex justify-content-center align-items-center"
+                    >
+                      <p class="text-white primary-font h3">zdravo</p>
+                    </div>
+                  </div></a
+                >
+              </div>
+              <div class="col-sm-6 p-0 overflow-hidden">
+                <a href="#" class="menu-link">
+                  <div class="menu-img menu-img-3 position-relative">
+                    <div
+                      class="dark-overlay d-flex justify-content-center align-items-center"
+                    >
+                      <p class="text-white primary-font h3">organski</p>
+                    </div>
+                  </div></a
+                >
+              </div>
+              <div class="col-sm-6 p-0 overflow-hidden">
+                <a href="#" class="menu-link">
+                  <div class="menu-img menu-img-4 position-relative">
+                    <div
+                      class="dark-overlay d-flex justify-content-center align-items-center"
+                    >
+                      <p class="text-white primary-font h3">kvalitetno</p>
+                    </div>
+                  </div></a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-12 mb-sm-5 mb-md-5 mb-lg-0">
+            <h3 class="dark-color secondary-font mb-m2 h2">Iz menija</h3>
+            <h2 class="display-font text-uppercase">SPECIJALNE PONUDE</h2>
+            <hr class="title-hr w-25 mx-0" />
+            <div class="row mt-4 menu-dish">
+              <div class="col-sm-3">
+                <img
+                  src="img/menu-5.jpg"
+                  alt="menu img"
+                  class="w-100 rounded-circle"
+                />
+              </div>
+              <div
+                class="col-sm-6 d-flex justify-content-center align-items-center"
+              >
+                <div class="#">
+                  <h4 class="primary-font text-uppercase dish-name">
+                    DIMLJENA PASTRMKA
+                  </h4>
+                  <p class="text-muted primary-font dish-desc">
+                    File dimljene pastrmke sa barenim krompirom
+                  i blitvom
+                  </p>
+                </div>
+              </div>
+              <div
+                class="col-sm-3 border-top border-bottom d-flex justify-content-center align-items-center"
+              >
+                <h4 class="dark-color secondary-font h1 dish-price">15$</h4>
+              </div>
+            </div>
+            <div class="row mt-4 menu-dish">
+              <div class="col-sm-3">
+                <img
+                  src="img/menu-6.jpg"
+                  alt="menu img"
+                  class="w-100 rounded-circle"
+                />
+              </div>
+              <div
+                class="col-sm-6 d-flex justify-content-center align-items-center"
+              >
+                <div class="#">
+                  <h4 class="primary-font text-uppercase dish-name">
+                    POSEJDON PLATA
+                  </h4>
+                  <p class="text-muted primary-font dish-desc">
+                    Lignje,pastrmka,som,šaran i 
+                    bareni krompir
+                  </p>
+                </div>
+              </div>
+              <div
+                class="col-sm-3 border-top border-bottom d-flex justify-content-center align-items-center"
+              >
+                <h4 class="dark-color secondary-font h1 dish-price">20$</h4>
+              </div>
+            </div>
+            <div class="row mt-4 menu-dish">
+              <div class="col-sm-3">
+                <img
+                  src="img/menu-5.jpg"
+                  alt="menu img"
+                  class="w-100 rounded-circle"
+                />
+              </div>
+              <div
+                class="col-sm-6 d-flex justify-content-center align-items-center"
+              >
+                <div class="#">
+                  <h4 class="primary-font text-uppercase dish-name">
+                    LIGNJE NA ŽARU
+                  </h4>
+                  <p class="text-muted primary-font dish-desc">
+                    Sa barenim krompirom i blitvom
+                  </p>
+                </div>
+              </div>
+              <div
+                class="col-sm-3 border-top border-bottom d-flex justify-content-center align-items-center"
+              >
+                <h4 class="dark-color secondary-font h1 dish-price">19$</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- TESTIMONIALS -->
+    <div
+      id="testimonials"
+      class="d-flex justify-content-center align-items-center position-relative"
+    >
+      <div class="dark-overlay"></div>
+      <div class="container">
+        <h2 class="text-uppercase display-font text-white text-center mb-4">
+          Šta naše mušterije misle o nama
+        </h2>
+        <div
+          id="carouselExampleIndicators"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <p class="text-white primary-font text-center">
+                Sjajan restoran,usluga na najvišem nivou,a hrana preukusna.
+                Savršen odnos cene i kvaliteta.Mislim da odavde niko nikada 
+                nije izašao gladan i razočaran.
+              </p>
+              <p class="text-uppercase text-second primary-font text-center">
+                - Nemanja Ristić
+              </p>
+            </div>
+            <div class="carousel-item">
+              <p class="text-white primary-font text-center">
+                Veoma visok kvalitet hrane i usluge sa razumnim cenama.
+                Svaka preporuka.
+              </p>
+              <p class="text-uppercase text-second primary-font text-center">
+                - Gordan Djurić
+              </p>
+            </div>
+            <div class="carousel-item">
+              <p class="text-white primary-font text-center">
+                Izuzetan restoran.Prava adresa za poslovni ili 
+                porodični ručak.
+              </p>
+              <p class="text-uppercase text-second primary-font text-center">
+                - Petar Perić
+              </p>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Prethodni</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Sledeći</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- CONTACT -->
+    <div id="contact" class="py-5">
+      <div class="container">
+        <div class="row">
+          <div
+            class="col-lg-4 col-md-3 col-sm-4 d-flex justify-content-center align-items-center"
+          >
+            <img src="img/contact-3.jpg" alt="contact 1" class="img-fluid" />
+          </div>
+          <div
+            class="col-lg-4 col-md-6 col-sm-4 text-center d-flex justify-content-center align-items-center"
+          >
+            <div class="w-100 py-4">
+              <h3 class="dark-color secondary-font">Rezervacije</h3>
+              <h2 class="display-font text-uppercase">REZERVIŠI SVOJ STO</h2>
+              <hr class="title-hr w-25" />
+              <form action="#" class="mt-5">
+                <div class="input-group mb-3 bg-white rounded-0">
+                  <span
+                    class="input-group-text bg-white rounded-0 border-end-0 px-3 py-2"
+                    ><span
+                      class="iconify-inline dark-color"
+                      data-icon="fa:user"
+                      data-width="14"
+                    ></span
+                  ></span>
+                  <input
+                    type="text"
+                    class="form-control primary-font rounded-0 border-start-0"
+                    placeholder="Ime"
+                    aria-label="name"
+                  />
+                </div>
+                <div class="input-group mb-3 bg-white rounded-0">
+                  <span
+                    class="input-group-text bg-white rounded-0 border-end-0 px-3 py-2"
+                    ><span
+                      class="iconify-inline dark-color"
+                      data-icon="fa:envelope"
+                      data-width="14"
+                    ></span
+                  ></span>
+                  <input
+                    type="email"
+                    class="form-control primary-font rounded-0 border-start-0"
+                    placeholder="Your Email"
+                    id="email"
+                    name="email"
+                  />
+                </div>
+                <div class="input-group mb-3 bg-white rounded-0">
+                  <span
+                    class="input-group-text bg-white rounded-0 border-end-0 px-3 py-2"
+                    ><span
+                      class="iconify-inline dark-color"
+                      data-icon="fa:calendar"
+                      data-width="14"
+                    ></span
+                  ></span>
+                  <input
+                    type="date"
+                    class="form-control primary-font rounded-0 border-start-0"
+                    id="date"
+                    name="date"
+                  />
+                </div>
+                <div class="input-group mb-3 bg-white rounded-0">
+                  <span
+                    class="input-group-text bg-white rounded-0 border-end-0 px-3 py-2"
+                    ><span
+                      class="iconify-inline dark-color"
+                      data-icon="fa:clock-o"
+                      data-width="14"
+                    ></span
+                  ></span>
+                  <input
+                    type="time"
+                    class="form-control primary-font rounded-0 border-start-0"
+                    id="time"
+                    name="time"
+                  />
+                </div>
+                <div class="input-group mb-3 bg-white rounded-0">
+                  <span
+                    class="input-group-text bg-white rounded-0 border-end-0 px-3 py-2"
+                    ><span
+                      class="iconify-inline dark-color"
+                      data-icon="fa:group"
+                      data-width="14"
+                    ></span
+                  ></span>
+                  <input
+                    type="number"
+                    class="form-control primary-font rounded-0 border-start-0"
+                    placeholder="broj osoba"
+                    id="number"
+                    name="number"
+                  />
+                </div>
+                <button
+                  type="submit"
+                  class="w-100 p-2 text-white border-0 bg-dark primary-font"
+                >
+                  POŠALJI
+                </button>
+              </form>
+            </div>
+          </div>
+          <div
+            class="col-lg-4 col-md-3 col-sm-4 d-flex justify-content-center align-items-center"
+          >
+            <img src="img/contact-4.jpg" alt="contact 2" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- FOOTER -->
+    <footer class="bg-dark pt-4 pb-3">
+      <div class="container text-center">
+        <h2 class="text-second secondary-font">Prestiž</h2>
+        <div class="row d-flex justify-content-center">
+          <p class="primary-font text-uppercase">
+            <a href="index.html" class="text-muted text-decoration-none mx-2">
+              Početna
+            </a>
+            <a href="about.html" class="text-muted text-decoration-none mx-2">
+              O nama
+            </a>
+            <a href="menu.html" class="text-muted text-decoration-none mx-2">
+              Meni
+            </a>
+            <a href="gallery.html" class="text-muted text-decoration-none mx-2">
+              Galerija
+            </a>
+            <a
+              target="blank"
+              href="https://uros676.github.io"
+              class="text-muted text-decoration-none mx-2"
+            >
+              Autor
+            </a>
+          </p>
+        </div>
+        <div class="row mt-4">
+          <h3 class="text-white primary-font h6">Svratite nam opet</h3>
+          <p class="primary-font text-uppercase h5">
+            <a
+              href="https://rs.linkedin.com"
+              class="text-muted text-decoration-none mx-2"
+            >
+              <span
+                class="iconify"
+                data-icon="akar-icons:linkedin-v1-fill"
+              ></span>
+            </a>
+            <a
+              href="css/style.min.css"
+              class="text-muted text-decoration-none mx-2"
+              ><span class="iconify" data-icon="foundation:css3"></span>
+            </a>
+            <a href="sitemap.xml" class="text-muted text-decoration-none mx-2">
+              <span class="iconify" data-icon="mdi:sitemap"></span>
+            </a>
+            <a
+              href="https://instagram.com"
+              class="text-muted text-decoration-none mx-2"
+            >
+              <span
+                class="iconify"
+                data-icon="fa-brands:instagram-square"
+              ></span>
+            </a>
+          </p>
+        </div>
+        <p class="text-muted primary-font">
+          Prestiž 2022 &copy; All rights reserved
+        </p>
+      </div>
+    </footer>
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title primary-font" id="exampleModalLabel">
+              O nama
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body text-center">
+            <p class="text-second display-font h3 w-75 mx-auto dark-color">
+              "Sve dok vam je u ustima zalogaj hrane,
+                problemi su rešeni-bar za sada".
+            </p>
+            <p class="primary-font fw-light">- Franc Kafka</p>
+            <p class="text-muted primary-font small">
+              Restoran,Prestiž sa svojim prelepim enterijerom i zanimljivom arhitekturom,
+                predstavlja biser gastronomske ponude našeg grada.Restoran je kapaciteta do
+                200 mesta u kome je moguće organizovati sve vrste ličnih i poslovnih proslava,
+                u salama sa prelepim dekorativnim detaljima. Naš restoran je tako dizajniran 
+                da omogućava gostima da se povežu sa luksuzom i sa svojim najmilijima.
+            </p>
+            <h3 class="secondary-font text-second dark-color h3 m--2">
+              Naša ponuda
+            </h3>
+            <h2 class="display-font text-uppercase h2">
+              UVEK SVEŽA HRANA
+            </h2>
+            <hr class="title-hr w-25 my-3" />
+            <p class="text-muted primary-font small">
+              Pored fantastične dekoracije i atmosfere, naravno je tu je i fantastična kuhinja.
+              Naš meni zasnivaju se na dugogodišnjem iskustvu,medjutim možete i vi sami za sebe
+              prilagoditi meni i odabrati ono što vama odgovara,a nama će biti zadovoljstvo 
+              udovoljiti vašim zahtevima.Kako bi smo vam olakšali izbor,pripremili smo menije 
+              u skladu sa vašim najvišim standardima.Ovi meniji nude tradicionalne ponude kao i 
+              nove inovativne kreacije i neke super poklone.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="p-2 text-white border-0 bg-dark primary-font"
+              data-bs-dismiss="modal"
+            >
+              Zatvori
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Iconify Design -->
+    <script src="https://code.iconify.design/2/2.1.2/iconify.min.js"></script>
+    <!-- Boostrap 5 JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
